@@ -27,6 +27,25 @@
         .flotte {
         float:left;
        }
+       body {
+
+         margin: 0;
+         padding: 0;
+       }
+       section{
+         width: 100%;
+         height: : 300vh;
+         background: url(bg.jpg) no repeat;
+         background-size: cover;
+       }
+       .gotopbtn{
+         position: fixed;
+         width: 50px;
+         height: 50px;
+         background: #27ae60;
+         bottom: 40px;
+         right: 50px;
+       }
     </style>
 
     <nav class="navbar navbar-expand-lg navbar-ligth" style="background-color: #FFFFFF ;>
@@ -45,7 +64,7 @@
       </li>
     </ul>
     @guest
-  
+
     <div class="form-inline my-2 my-lg-0">
       <a class="btn btn-outline btn-primary" href="{{ route('register')}}">S'inscrire</a>
       <a class="btn btn-ligth" href="{{ route('login')}}">S'identifier</a>
